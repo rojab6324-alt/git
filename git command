@@ -1,0 +1,96 @@
+1. Check Git Configuration
+     git config --global --list 
+    #Shows the global Git configuration settings.
+
+2. Set Username
+     git config --global user.name "name"
+    #Sets the username for Git commits.
+
+3. Set Email
+     git config --global user.email "mail id"
+   #Sets the email for Git commits.
+
+Repository Commands
+4. Initialize Git Repository
+     git init  #creates a new local Git repository.
+
+5. Clone Repository
+     git clone <repository_url> (Copies an existing repository from GitHub to your local system.)
+     # example : git clone https://github.com/user/repo.git
+
+File Tracking Commands
+6. Check Status
+     git status #Shows changed, staged, and untracked files
+
+7. Add File to Staging
+     git add filename #Adds a specific file to the staging area.
+
+     Add all files:
+     git add .
+
+8. Commit Changes
+     git commit -m "added commit message" #Saves staged changes to the repository.
+
+Remote Repository Commands
+9. Push Code
+     git push origin branchname #Pushes local commits to the remote repository.
+    Example:
+      git push origin main
+
+10. Pull Latest Code
+      git pull # Fetches and merges changes from the remote repository.
+
+11. Fetch Changes
+      git fetch #Downloads changes from remote but does not merge.
+
+Branch Management
+12. Switch Branch
+     git checkout branchname #Moves to another branch.
+
+13. New Branch and Switch
+      git checkout -b branchname
+
+14. Modern Way to Switch Branch
+      git switch branchname
+
+Stash Commands
+15. Stash Changes
+    git stash  #Temporarily saves uncommitted changes.
+
+16. Apply Stash
+     git stash pop
+
+17. List Stashes
+    git stash list
+
+History and Comparison
+18. View Commit History
+    git log
+
+19. Show Commit Details
+    git show
+
+20. Show File Differences
+    git diff
+
+Advanced Git Commands
+21. Merge Branch
+    git merge branchname #Merges another branch into the current branch.
+
+22. Rebase Branch
+    git rebase branchname #git rebase branchname
+
+23. Reset Changes
+    git reset #Undo commits or staging changes.
+
+24. Cherry Pick Commit
+    git cherry-pick commit_id #Applies a specific commit from another branch.
+
+Remote Commands
+25. Check Remote Repository
+    git remote
+
+26. Show Remote URL
+    git remote -v
+    #origin https://github.com/user/repo.git (fetch)
+    #origin https://github.com/user/repo.git (push)
